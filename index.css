@@ -1,0 +1,234 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #f8f9fa;
+  color: #222;
+}
+
+header {
+  background: #222;
+  color: blue;
+  padding: 1.2rem 0 1rem 0;
+}
+
+.nav_links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.2rem;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  position: relative;
+  background-color: rgb(255, 255, 255);
+  border: 2px solid blue;
+  border-radius: 20px;
+  transition: 2s;
+  text-align: center;
+}
+
+.nav_links:hover {
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.9);
+}
+
+.nav_links a {
+  color: blue;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.1rem;
+  padding: 0.4rem 1rem;
+  border-radius: 5px;
+  transition: background 0.2s;
+}
+
+.nav_links a:hover {
+  background: #007bff;
+}
+
+a {
+  text-decoration: none;
+  text-align: center;
+  justify-content: center;
+  padding: 0 2rem;
+  color: blue;
+  transition: 1.5s;
+}
+
+a:hover {
+  background-color: blue;
+  color: white;
+  border-radius: 20px;
+  padding: 10px 20px;
+}
+
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1.5rem 1rem 0 1rem;
+}
+
+.about_page,
+.page_intro,
+.page_reviews,
+.click_to_register {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+  margin-bottom: 2rem;
+  padding: 2rem;
+}
+
+.about_page {
+  height: 20%;
+}
+
+.about_page h1 {
+  color: #007bff;
+  margin-top: 0;
+  font-size: 2.2rem;
+}
+
+.page_intro {
+  margin: 5%;
+  display: flex;
+  position: relative;
+  border-radius: 15px;
+  border-color: blue;
+  padding: 5px 10px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.9);
+  transition: 0.9s;
+}
+
+.page_intro:hover {
+  background-color: aqua;
+  color: black;
+  border-color: blue;
+}
+
+.page_reviews h2 {
+  color: #222;
+  margin-top: 0;
+}
+
+.marker {
+  margin: 1.2rem 0 1.2rem 1.2rem;
+  padding: 0;
+  list-style: disc inside;
+}
+
+.marker li {
+  margin-bottom: 0.5rem;
+  font-size: 1.05rem;
+  position: relative;
+  padding-left: 20px;
+}
+
+.marker li::before {
+  content: ".";
+  color: blue;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.to_register {
+  text-align: center;
+  margin: 1.5rem 0;
+  display: flex;
+  position: relative;
+  justify-content: center;
+}
+
+.to_register a {
+  background: #007bff;
+  color: #fff;
+  padding: 0.7rem 1.5rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.2s;
+}
+
+.to_register a:hover {
+  background: #0056b3;
+}
+
+.to_top {
+  text-align: right;
+  margin: 1rem 0 0 0;
+  float: right;
+  border: 2px solid white;
+  border-radius: 20px;
+  transition: 0.9s;
+}
+
+.to_top:hover {
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.9);
+}
+
+.to_top a {
+  font-size: 2rem;
+  text-decoration: none;
+}
+
+footer {
+  background: #222;
+  color: #fff;
+  text-align: center;
+  padding: 1.2rem 0 1rem 0;
+  font-size: 1rem;
+  justify-content: center;
+  display: flex;
+  border-radius: 10px;
+  margin: 5%;
+}
+
+.footer {
+  max-width: 900px;
+  margin: 0 auto;
+}
+.container-footer{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  list-style-type: none;
+  padding: 0;
+  gap: 15px;
+  position: relative;
+}
+
+/* Responsive styles */
+@media (max-width: 700px) {
+  main,
+  .about_page,
+  .page_intro,
+  .page_reviews,
+  .click_to_register {
+    padding: 1rem 0.5rem;
+  }
+  .about_page h1 {
+    font-size: 1.4rem;
+  }
+  .nav_links {
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .about_page,
+  .page_intro,
+  .page_reviews,
+  .click_to_register {
+    padding: 0.5rem 0.2rem;
+  }
+  .about_page h1 {
+    font-size: 1.1rem;
+  }
+  .nav_links a {
+    font-size: 1rem;
+    padding: 0.3rem 0.7rem;
+  }
+  .to_top a {
+    font-size: 1.3rem;
+  }
+}
