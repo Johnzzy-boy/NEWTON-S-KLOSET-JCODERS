@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us | Newton's Kloset</title>
+  <meta name="description" content="Learn more about Newton's Kloset, your trusted source for quality fashion and accessories.">
+  <style>
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: #f8f9fa;
+      margin: 0;
+      color: #222;
+    }
+    .site-header {
+      background: #222;
+      color: #fff;
+      padding: 1.5rem 0 1rem 0;
+      margin-bottom: 2rem;
+    }
+    .header-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 0 1rem;
+    }
+    .logo {
+      font-size: 2rem;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+    .nav .btn.primary {
+      background: #007bff;
+      color: #fff;
+      padding: 0.5rem 1.2rem;
+      border: none;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: background 0.2s;
+    }
+    .nav .btn.primary:hover {
+      background: #0056b3;
+    }
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 0 1rem;
+    }
+    .about-section {
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+      padding: 2rem 2rem 1.5rem 2rem;
+      margin-bottom: 2rem;
+    }
+    .about-section h2 {
+      color: #007bff;
+      margin-top: 0;
+    }
+    .about-section ul {
+      margin: 1.2rem 0 1.2rem 1.2rem;
+      padding: 0;
+      list-style: disc inside;
+    }
+    .about-section li {
+      margin-bottom: 0.5rem;
+      font-size: 1.05rem;
+    }
+    .site-footer {
+      background: #222;
+      color: #fff;
+      text-align: center;
+      padding: 1.2rem 0 1rem 0;
+      font-size: 1rem;
+    }
+    @media (max-width: 600px) {
+      .about-section {
+        padding: 1rem 0.5rem;
+      }
+      .header-inner, .container {
+        padding: 0 0.5rem;
+      }
+      .logo {
+        font-size: 1.3rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1 class="logo">Newton's Kloset</h1>
+      <nav class="nav">
+        <a href="shop.html" class="btn primary">Shop Now</a>
+      </nav>
+    </div>
+  </header>
+  <main class="container">
+    <section class="about-section">
+      <h2>About Newton's Kloset</h2>
+      <p>Newton's Kloset is dedicated to bringing you the best in fashion, style, and quality. Our curated collection features classic and modern pieces for every occasion. We believe in affordable luxury and exceptional customer service.</p>
+      <ul>
+        <li>Wide range of clothing and accessories</li>
+        <li>Quality products at great prices</li>
+        <li>Fast and reliable delivery</li>
+        <li>Customer satisfaction guaranteed</li>
+      </ul>
+      <p>Thank you for choosing Newton's Kloset. We look forward to serving you!</p>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <p>Newton's Kloset <br>
+      © Copyright <span id="year"></span></p>
+    </div>
+  </footer>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

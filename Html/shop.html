@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>NEWTON'S KLOSET</title>
+  <link rel="stylesheet" href="/Css/shop.css">
+  <link rel="shortcut icon" href="/Images/JOHN.jpg" type="image/x-icon">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1 class="logo">Newton's Kloset</h1>
+      <nav class="nav">
+        <button id="cart-btn" aria-label="Open cart">
+         <b> shop🛒 now</b><span id="cart-count" class="badge">0.00</span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h2>Shop Now</h2>
+    </section>
+
+    <section id="products" class="products-grid" aria-live="polite">
+      <!-- Products injected by JavaScript -->
+    </section>
+  </main>
+
+  <!-- Cart drawer -->
+  <aside id="cart-drawer" class="cart-drawer" aria-hidden="true">
+    <div class="cart-header">
+      <h3>My Cart 🛒</h3>
+      <button id="close-cart" aria-label="Close cart">✕</button>
+    </div>
+
+    <div id="cart-items" class="cart-items">
+      <!-- Cart items injected here -->
+    </div>
+
+    <div class="cart-footer">
+      <div class="totals">
+        <div>Subtotal</div>
+        <div id="cart-subtotal">₵0.00</div>
+      </div>
+      <button id="clear-cart" class="btn outline">Clear cart</button>
+      <button id="checkout-btn" class="btn primary">Checkout your items</button>
+    </div>
+  </aside>
+
+  <!-- Checkout modal -->
+  <div id="checkout-modal" class="modal" aria-hidden="true">
+    <div class="modal-content">
+      <button id="close-checkout" class="modal-close" aria-label="Close checkout">✕</button>
+      <h3>Checkout your items</h3>
+      <form id="checkout-form">
+        <div class="form-row">
+          <label for="name">Full name</label>
+          <input id="name" name="name" type="text" required placeholder="John Imbomah"/>
+        </div>
+        <div class="form-row">
+          <label for="telephone">Telephone</label>
+          <input id="telephone" name="telephone" type="tel" required placeholder="+233 595 230 45"/>
+        </div>
+        <div class="form-row">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required placeholder="johnimbomah@gmail.com"/>
+        </div>
+        <div class="form-row">
+          <label for="size">Size</label>
+          <input id="size" name="size" type="text" required  placeholder="S, M, L, XL, XXL,"/>
+        </div>
+        <div class="form-row">
+          <label for="address">Address-Location</label>
+          <input id="address" name="address" type="text" required placeholder="Eg: Accra"/>
+        </div>
+        <div class="form-row">
+          <label for="notes">Order notes (optional)</label>
+          <textarea id="notes" name="notes" rows="3" placeholder="Example: The color of the Item or how you want it to be"></textarea>
+        </div>
+
+        <div class="form-actions">
+          <div class="totals small">
+            <div>Total</div>
+            <div id="checkout-total">₵0.00</div>
+          </div>
+          <button class="btn primary" type="submit" id="whatsapp-submit">Place order</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+<section>
+    <div class="container-footer">
+      <p>Newton's Kloset
+     © Copyright <span id="year"></span></p>
+     <p>We Offer Delivery Service Nation Wide</p>
+    </div>
+    </section>
+
+    <section>
+      <div class="container-footer">
+        <p>Location📍: Accra Tudo</p>
+        <p>Orange House Oposite GTC Bank</p> 
+      </div>
+    </section>
+  </footer>
+  <button id="scrollToTopBtn" onclick="tofunction()">🔝</button>
+<script src="shop.js"></script>
+</body>
+</html>
