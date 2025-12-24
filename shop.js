@@ -8,7 +8,7 @@ const PRODUCTS = [
     id: "p1",
     title: "Men's Classic Polo Shirt",
     price: 45.0,
-    image: "Images/IMG-20251129-WA0057.jpg",
+    image: "IMG-20251129-WA0057.jpg",
     desc: "Comfortable cotton polo shirt, perfect for casual and semi-formal occasions.",
   },
   {
@@ -828,5 +828,6 @@ function closeMobileMenu() {
     line.style.opacity = "";
   });
 }
+
 
 
